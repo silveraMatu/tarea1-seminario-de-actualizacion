@@ -28,6 +28,10 @@ buttonChangeColor.addEventListener("click", (e)=>{
     targetText.style.color = colores[0].textColor
     currentIteration = 0
   }
+})
 
-  console.log(currentIteration)
+window.addEventListener("keydown", (e)=>{
+  if(e.key == "Enter"){ 
+    alert(targetText.value)
+  }
 })
